@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand safety для соцсетей Yango: анкета для PR</title>
+<style>
+  :root { --red:#FF0000; --black:#050505; --g1:#F5F5F5; --g2:#E1E1E1; --text:#1a1a1a; --muted:#6b6b6b; --ok:#1f9d55; --mid:#d18b00; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:#fff; line-height:1.45; }
+  header { background:var(--black); color:#fff; padding:36px 20px 28px; }
+  .wrap { max-width:860px; margin:0 auto; padding:0 20px; }
+  header .wrap { padding:0; }
+  .tag { display:inline-block; background:var(--red); color:#fff; font-weight:700; font-size:12px; letter-spacing:.06em; text-transform:uppercase; padding:5px 10px; border-radius:100px; }
+  h1 { font-size:30px; line-height:1.15; margin:14px 0 10px; }
+  header p { color:#cfcfcf; margin:6px 0; font-size:16px; }
+  h2 { font-size:22px; margin:40px 0 6px; }
+  h2 .num { color:var(--red); margin-right:8px; }
+  .lead { color:var(--muted); margin:0 0 16px; }
+  .card { background:var(--g1); border-radius:22px; padding:20px 22px; margin:14px 0; }
+  .intro p { margin:8px 0; }
+  .item { background:var(--g1); border-radius:22px; padding:18px 20px; margin:12px 0; border:2px solid transparent; transition:border-color .15s; }
+  .item.s-agree { border-color:var(--ok); }
+  .item.s-discuss { border-color:var(--mid); }
+  .item.s-other { border-color:var(--red); }
+  .item .id { font-weight:700; color:var(--red); font-size:13px; letter-spacing:.04em; }
+  .item h3 { margin:4px 0 8px; font-size:18px; }
+  .item .why { color:var(--muted); font-size:14px; margin:6px 0 0; }
+  .item .why b { color:var(--text); }
+  .btns { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .btns button { border:0; border-radius:100px; padding:10px 16px; font-weight:700; font-size:14px; cursor:pointer; background:var(--g2); color:var(--black); }
+  .btns button.on[data-v="agree"] { background:var(--ok); color:#fff; }
+  .btns button.on[data-v="discuss"] { background:var(--mid); color:#fff; }
+  .btns button.on[data-v="other"] { background:var(--red); color:#fff; }
+  .cm { display:none; margin-top:10px; }
+  .item.s-discuss .cm, .item.s-other .cm, .item.open .cm { display:flex; gap:8px; align-items:flex-start; }
+  textarea { flex:1; min-height:64px; border:1px solid var(--g2); border-radius:14px; padding:10px 12px; font:inherit; font-size:14px; resize:vertical; background:#fff; }
+  .mic { border:0; background:var(--black); color:#fff; border-radius:100px; width:44px; height:44px; font-size:18px; cursor:pointer; flex:none; }
+  .mic.rec { background:var(--red); animation:p 1s infinite; }
+  @keyframes p { 50% { opacity:.6; } }
+  .addc { background:none; border:0; color:var(--muted); text-decoration:underline; cursor:pointer; font-size:13px; padding:8px 0 0; }
+  .open-q textarea { width:100%; }
+  .bar { position:sticky; bottom:0; background:#fff; border-top:1px solid var(--g2); padding:12px 0; margin-top:30px; }
+  .bar .wrap { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .progress { flex:1; min-width:160px; font-size:14px; color:var(--muted); }
+  .main { border:0; border-radius:100px; padding:13px 20px; font-weight:700; font-size:15px; cursor:pointer; background:var(--red); color:#fff; }
+  .sec { border:0; border-radius:100px; padding:13px 20px; font-weight:700; font-size:15px; cursor:pointer; background:var(--black); color:#fff; }
+  .toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:var(--black); color:#fff; padding:10px 16px; border-radius:100px; font-size:14px; display:none; }
+  @media (max-width:600px) {
+    h1 { font-size:24px; }
+    .bar { padding:8px 0; }
+    .bar .wrap { flex-wrap:nowrap; gap:6px; }
+    .progress { min-width:0; font-size:12px; }
+    .main, .sec { padding:10px 12px; font-size:13px; white-space:nowrap; }
+    #dl { display:none; }
+  }
+  ul.tight { margin:6px 0; padding-left:20px; } ul.tight li { margin:3px 0; }
+  footer { color:var(--muted); font-size:13px; padding:20px 0 40px; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="tag">Yango Group · Brand safety</span>
+  <h1>Правильно ли мы понимаем бренд в соцсетях?</h1>
+  <p>Правила для контента Yango в соцсетях: проверьте, что мы поняли бренд верно. Займёт 5 минут.</p>
+</div></header>
+
+<div class="wrap">
+
+<div class="card intro">
+  <p><b>Что это.</b> Правила для контента, который мы выпускаем в соцсетях от имени бренда Yango. Часть роликов теперь делает AI-студия, и эти правила агенты проверяют ещё до генерации.</p>
+  <p><b>Зачем вам.</b> Готового документа по brand safety у PR нет, поэтому мы записали, как сами понимаем бренд. Проверьте, что поняли верно.</p>
+  <p><b>Как отвечать.</b> По каждому пункту одна кнопка: «Согласна», «Обсудить» или «Иначе». Комментарий нужен только если не согласны, его можно надиктовать кнопкой 🎤. В конце «Скопировать ответы» и вставьте в чат. Минут 5.</p>
+</div>
+
+<div id="app"></div>
+
+<footer>Источники: описание Yango Group из чата «позиционируем», Brand Story, рабочие правила AI-студии. Подготовлено 10.11.2026 для Дарьи Старковой.</footer>
+</div>
+
+<div class="bar"><div class="wrap">
+  <div class="progress" id="prog"></div>
+  <button class="sec" id="dl">Скачать .txt</button>
+  <button class="main" id="copy">Скопировать ответы</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const SECTIONS = [
+ {n:"A", t:"Кто мы в соцсетях", l:"Основа, на которой строится весь контент.", items:[
+  ["A1","Городской нарратив","Yango помогает городу жить: ездить, есть, отдыхать, получать нужное. В соцсетях это узнаваемые ситуации из городской жизни, а Yango в них естественная часть дня, не реклама в каждом кадре.","Так звучит обновлённое позиционирование и Powering City Life."],
+  ["A2","Народный бренд","Мы бренд для всех и на стороне людей. Говорим как друг: тепло, просто, с юмором. Никого не поучаем и не ставим себя выше аудитории.","Это задаёт тон всем роликам и подписям."],
+  ["A3","Локально, на языке страны","Контент делаем под конкретную страну: её язык, диалект, улицы, еду и привычки. Перед публикацией его смотрит команда страны.",""],
+  ["A4","Только проверенные факты","Цифры о компании и обещания о сервисах берём только из текстов PR и показываем только сервисы, которые реально есть в этой стране.",""]
+ ]},
+ {n:"B", t:"Юмор: где граница", l:"Главное: мы никого не обижаем. Отметьте, согласны ли с каждым правилом.", items:[
+  ["B1","Смеёмся над ситуацией, а не над человеком","Смешной может быть ситуация: пробка, опоздание, ожидание доставки, понедельник, жара, пятничные планы. Человек в ней не объект насмешки, зритель узнаёт в нём себя.",""],
+  ["B2","Никогда не шутим зло","Без сарказма, издёвки, унижения и злых комментариев. Если шутка смешна только тому, кто шутит, а кому-то от неё обидно, её нет.",""],
+  ["B3","Не шутим над тем, что человек не выбирал","Внешность, вес, возраст, национальность, акцент, пол, здоровье, деньги и бедность не бывают предметом шутки.",""],
+  ["B4","Не высмеиваем наших людей","Клиенты, водители, курьеры и партнёры могут попасть в смешную ситуацию, но не становятся объектом насмешки. Они герои, а не мишень.",""],
+  ["B5","Не играем на стереотипах","Никаких шуток вида «все женщины…», «мужчины всегда…», «жители этой страны…». Семейные и бытовые сюжеты без унижения кого-то из участников.",""],
+  ["B6","Самоирония только мягкая","Можем по-доброму посмеяться над собой и бытовыми мелочами, но не над качеством сервиса и не над работой в компании.",""],
+  ["B7","Без чёрного и пошлого юмора","Не шутим про смерть, болезни, катастрофы, насилие, туалет и секс, даже если тренд кажется безобидным.",""],
+  ["B8","Не высмеиваем других","Конкуренты, другие бренды, публичные люди и знаменитости не становятся объектом шутки и не появляются в кадре.",""]
+ ]},
+ {n:"C", t:"Темы, которые не трогаем", l:"Даже нейтрально и без шутки.", items:[
+  ["C1","Политика и религия","Политика, выборы, политики, религия, религиозные символы и праздники.",""],
+  ["C2","Трагедии и насилие","Войны, теракты, катастрофы, реальные несчастные случаи, кровь, оружие против человека, наркотики, жестокость к животным.",""],
+  ["C3","Опасное поведение на дороге","Телефон за рулём, без ремня или шлема, превышение скорости, проезд на красный.",""],
+  ["C4","Реальные люди без согласия","Лица и голоса реальных людей, включая наших руководителей, в AI-контенте не используем.",""],
+  ["C5","Алкоголь","В Пакистане, Омане, ОАЭ, Эфиопии и на рынках MENA не показываем. В других странах только по решению команды страны.","Если география другая, напишите в комментарии."]
+ ]}
+];
+const KEY="ybs-pr-2026-11-v2";
+let st={}; try{ st=JSON.parse(localStorage.getItem(KEY)||"{}"); }catch(e){ st={}; }
+const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(st)); }catch(e){} prog(); };
+const LBL={agree:"Согласна",discuss:"Обсудить",other:"Иначе"};
+const app=document.getElementById("app");
+SECTIONS.forEach(s=>{
+  const h=document.createElement("h2"); h.innerHTML=`<span class="num">${s.n}</span>${s.t}`; app.appendChild(h);
+  const l=document.createElement("p"); l.className="lead"; l.textContent=s.l; app.appendChild(l);
+  s.items.forEach(([id,title,text,why])=>{
+    const d=document.createElement("div"); d.className="item"; d.id=id;
+    d.innerHTML=`<div class="id">${id}</div><h3>${title}</h3><div>${text}</div>${why?`<p class="why">${why}</p>`:""}
+    <div class="btns">${Object.keys(LBL).map(v=>`<button data-v="${v}">${LBL[v]}</button>`).join("")}</div>
+    <button class="addc">добавить комментарий</button>
+    <div class="cm"><textarea placeholder="Комментарий: что не так и как правильно"></textarea><button class="mic" title="Надиктовать">🎤</button></div>`;
+    app.appendChild(d); wire(d,id);
+  });
+});
+function wire(d,id){
+  const s=st[id]||(st[id]={v:"",c:""});
+  const ta=d.querySelector("textarea"); ta.value=s.c||"";
+  ta.addEventListener("input",()=>{ s.c=ta.value; save(); });
+  d.querySelectorAll(".btns button").forEach(b=>{
+    if(b.dataset.v===s.v) b.classList.add("on");
+    b.onclick=()=>{ s.v=b.dataset.v; d.querySelectorAll(".btns button").forEach(x=>x.classList.toggle("on",x===b)); paint(d,s); save(); if(s.v!=="agree") ta.focus(); };
+  });
+  const a=d.querySelector(".addc"); if(a) a.onclick=()=>{ d.classList.add("open"); ta.focus(); };
+  paint(d,s); mic(d.querySelector(".mic"),ta,s);
+}
+function paint(d,s){ d.classList.remove("s-agree","s-discuss","s-other"); if(s.v) d.classList.add("s-"+s.v); if(s.c) d.classList.add("open"); }
+function mic(btn,ta,s){
+  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR){ btn.title="Диктовка не поддерживается этим браузером"; btn.onclick=()=>toast("Диктовка работает в Chrome, Яндекс Браузере и Safari"); return; }
+  let r=null;
+  btn.onclick=()=>{
+    if(r){ r.stop(); return; }
+    r=new SR(); r.lang="ru-RU"; r.interimResults=false; r.continuous=true;
+    const base=ta.value?ta.value+" ":"";
+    let acc="";
+    r.onresult=e=>{ for(let i=e.resultIndex;i<e.results.length;i++) if(e.results[i].isFinal) acc+=e.results[i][0].transcript+" "; ta.value=base+acc.trim(); s.c=ta.value; save(); };
+    r.onend=()=>{ btn.classList.remove("rec"); r=null; };
+    r.onerror=()=>{ toast("Не удалось включить микрофон"); };
+    btn.classList.add("rec"); r.start();
+  };
+}
+function allIds(){ const ids=[]; SECTIONS.forEach(s=>s.items.forEach(i=>ids.push(i))); return ids; }
+function prog(){
+  const ids=allIds(); const done=ids.filter(i=>st[i[0]]&&st[i[0]].v).length;
+  document.getElementById("prog").textContent=`Отвечено ${done} из ${ids.length} пунктов`;
+}
+function report(){
+  let t="Brand safety для соцсетей Yango: ответы PR\n\n";
+  SECTIONS.forEach(s=>{ t+=`${s.n}. ${s.t}\n`; s.items.forEach(([id,title])=>{ const x=st[id]||{}; t+=`${id} ${title}: ${x.v?LBL[x.v]:"без ответа"}${x.c?" | "+x.c:""}\n`; }); t+="\n"; });
+  return t;
+}
+function toast(m){ const el=document.getElementById("toast"); el.textContent=m; el.style.display="block"; setTimeout(()=>el.style.display="none",2200); }
+document.getElementById("copy").onclick=async()=>{ const t=report(); try{ await navigator.clipboard.writeText(t); toast("Скопировано, вставьте в чат «позиционируем»"); }catch(e){ const w=window.open("","_blank"); w.document.write("<pre>"+t.replace(/</g,"&lt;")+"</pre>"); } };
+document.getElementById("dl").onclick=()=>{ const b=new Blob([report()],{type:"text/plain"}); const a=document.createElement("a"); a.href=URL.createObjectURL(b); a.download="brand-safety-otvety-PR.txt"; a.click(); };
+prog();
+</script>
+</body>
+</html>
